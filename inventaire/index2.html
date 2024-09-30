@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/styleIndex.css">
+	<style></style>
+    <title>GESMAG</title>
+   
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header">
+            <figcaption class="logo">
+                <img src="images/logo.png" alt="logo du site">
+            </figcaption>
+            <div class="user">
+                <p>Robert ATOLA</p>
+                <figcaption class="icon-user">
+                    <img src="images/users-32x32-1174889.png" alt="logo Utilisateur">
+                </figcaption>
+            </div>
+        </div>
+        
+        <!-- navbar -->
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav__a" href="#" onclick="changeContent('home')">Accueil</a>
+                </li>
+                <li>
+                    <a class="nav__a" href="#">Parc</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#" onclick="changeContent('pc')">PC</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeContent('imprimante')">Imprimante</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeContent('encre')">Encre</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeContent('scanner')">Scanner</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeContent('moniteur')">Moniteur</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeContent('logiciel')">Logiciel</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav__a" href="#">Etat</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#" onclick="changeContent('rapport')">Rapport</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeContent('stock')">Stock</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav__a" href="#" onclick="changeContent('outils')">Outil</a>
+                </li>
+                <li>
+                    <a class="nav__a" href="#" onclick="changeContent('parametre')">Paramètre</a>
+                </li>
+                <li>
+                    <a class="nav__a" href="#" onclick="changeContent('contact')">Contact</a>
+                </li>
+                <li>
+                    <a class="nav__a" href="login.html">Sortie</a>
+                </li>              
+            </ul>
+            <!-- le mini formulaire de recherche -->
+            <form method="" action="">
+                <input type="search" placeholder="Rechercher" required>                        
+            </form>
+            <!-- fin du formulaire de recherche -->
+        </nav>
+        <!-- fin navbar -->
+    </header>
+    <!-- header -->
+    <div id="content">
+        <!-- contenu de la page d'accueil -->
+        <div id="home" class="content home">
+            <div class="dashboard">
+                <div class="card">
+                    <div class="blue__dark thirty">
+                    </div>
+                    <div class="blue__light seventy">
+                        <p>Nombre de demande</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="green__dark thirty"></div>
+                    <div class="green__light seventy">
+                        <p>Requete</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="purple__dark thirty"></div>
+                    <div class="purple__light seventy">
+                        <p>Problème résolu</p>
+                        <p>50/100</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="orange__dark thirty"></div>
+                    <div class="orange__light seventy">
+                        <p>Utilisateur</p>
+                        <p>200 personnes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="background__img">
+                <form action="">
+                    <div class="input__home">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" placeholder="..." required>
+                    </div>
+                    <div class="input__home">
+                        <label for="marque">Marque</label>
+                        <input type="text" id="marque" placeholder="..." required>
+                    </div>
+                    <div class="input__home">
+                        <label for="modele">Modèle</label>
+                        <input type="text" id="modele" placeholder="..." required>
+                    </div>
+                    <div class="input__home">
+                        <label for="quantite">Quantite</label>
+                        <input type="text" id="quantite" placeholder="..." required>
+                    </div>
+                    <div class="input__home">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <button type="submit">Valider</button>
+                </form>
+            </div>
+        </div>
+		  <!-- fin accueil -->
+
+
+        <!-- page parc -->
+         <!-- page pc -->
+        <div id="pc" class="content parc">            
+            <h1>Ordinateur <span>(PC/Desktop/Tablette)</span><h1>
+            <h2>Enregistrement de la commande </h2>
+            <form action="">
+                <div class="input__parc pc">
+                    <label for="designation">Designation</label>
+                    <input type="text" id="designation" placeholder="hp elite..." required>
+                </div>
+                <div class="input__parc pc">
+                    <label for="numeroSerie">Numéro de Série</label>
+                    <input type="text" id="numeroSerie" placeholder="CZ..." required>
+                </div>
+                <div class="input__parc pc">
+                    <label for="numeroInventaire">N° Inventaire</label>
+                    <input type="text" id="numeroInventaire" placeholder="39..." required>
+                </div>
+                <div class="input__parc pc">
+                    <label for="nomAgent">Nom de l'agent</label>
+                    <input type="text" id="nomAgent" placeholder="ABAKAR..." required>
+                </div>
+                <div class="input__parc pc">
+                    <label for="direction">Direction</label>
+                    <input type="text" id="direction" placeholder="Nom de la Direction..." required>
+                </div>
+                <div class="input__parc pc">
+                    <label for="service">Service</label>
+                    <input type="text" id="service" placeholder="Nom du Service..." required>
+                </div>
+                <div class="input__parc pc">
+                    <label for="bureau">Bureau</label>
+                    <input type="text" id="bureau" placeholder="208" >
+                </div>
+                <div class="input__parc pc">
+                    <label for="poste">Poste</label>
+                    <input type="text" id="poste" placeholder="Numéro du poste" >
+                </div>
+                <div class="input__parc pc">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" placeholder="Nom du service" >
+                </div>
+                <div class="parc__btn">
+                    <button>Valider</button>
+                    <button>Imprimer</button>
+                    <button>Aperçu</button>
+                </div>
+            </form>    
+        </div>
+        <!-- fin pc -->
+
+        <!-- page imprimante -->
+        <div id="imprimante" class="content parc">            
+            <h1>Imprimante <span></span></h1>
+            <h2>
+                Enregistrement de la commande
+            </h2>
+            <form action="">
+                <div class="input__parc imprimante">
+                    <label for="designation">Designation</label>
+                    <input type="text" id="designation" placeholder="hp lazer..." required>
+                </div>
+                <div class="input__parc imprimante">
+                    <label for="numeroSerie">Numéro de Série</label>
+                    <input type="text" id="numeroSerie" placeholder="CZ..." required>
+                </div>
+                <div class="input__parc imprimante">
+                    <label for="numeroInventaire">N° Inventaire</label>
+                    <input type="text"  encre scannerid="numeroInventaire" placeholder="39..." required>
+                </div>
+                <div class="input__parc imprimante">
+                    <label for="nomAgent">Nom de l'agent</label>
+                    <input type="text" id="nomAgent" placeholder="ABAKAR..." required>
+                </div>
+                <div class="input__parc imprimante">
+                    <label for="direction">Direction</label>
+                    <input type="text" id="direction" placeholder="Nom de la Direction..." required>
+                </div>
+                <div class="input__parc imprimante">
+                    <label for="service">Service</label>
+                    <input type="text" id="service" placeholder="Nom du Service..." required>
+                </div>
+                <div class="input__parc imprimante">
+                    <label for="bureau">Bureau</label>
+                    <input type="text" id="bureau" placeholder="208" >
+                </div>
+                <div class="input__parc imprimante">
+                    <label for="poste">Poste</label>
+                    <input type="text" id="poste" placeholder="Numéro du poste"  imprimante>
+                </div>
+                <div class="input__parc imprimante">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" placeholder="Nom du service" >
+                </div>
+                <div class="parc__btn">
+                    <button>Valider</button>
+                    <button>Imprimer</button>
+                    <button>Aperçu</button>
+                </div>
+            </form>    
+        </div>
+        <!-- fin imprimante -->
+
+        <!-- debut encre -->
+        <div id="encre" class="content parc">            
+            <h1>Encre <span></span></h1>
+            <h2>
+                Enregistrement de la commande
+            </h2>
+            <form action="">
+                <div class="input__parc encre">
+                    <label for="designation">Designation</label>
+                    <input type="text" id="designation" placeholder="epson..." required>
+                </div>
+                <div class="input__parc encre">
+                    <label for="numeroSerie">Numéro de Série</label>
+                    <input type="text" id="numeroSerie" placeholder="CZ..." required>
+                </div>
+                <div class="input__parc encre">
+                    <label for="numeroInventaire">N° Inventaire</label>
+                    <input type="text" id="numeroInventaire" placeholder="39..." required>
+                </div>
+                <div class="input__parc encre">
+                    <label for="nomAgent">Nom de l'agent</label>
+                    <input type="text" id="nomAgent" placeholder="ABAKAR..." required>
+                </div>
+                <div class="input__parc encre">
+                    <label for="direction">Direction</label>
+                    <input type="text" id="direction" placeholder="Nom de la Direction..." required>
+                </div>
+                <div class="input__parc encre">
+                    <label for="service">Service</label>
+                    <input type="text" id="service" placeholder="Nom du Service..." required>
+                </div>
+                <div class="input__parc encre">
+                    <label for="bureau">Bureau</label>
+                    <input type="text" id="bureau" placeholder="208" >
+                </div>
+                <div class="input__parc encre">
+                    <label for="poste">Poste</label>
+                    <input type="text" id="poste" placeholder="Numéro du poste" >
+                </div>
+                <div class="input__parc encre logiciel">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" placeholder="Nom du service" >
+                </div>
+                <div class="parc__btn">
+                    <button>Valider</button>
+                    <button>Imprimer</button>
+                    <button>Aperçu</button>
+                </div>
+            </form>    
+        </div>
+        <!-- fin encre -->
+
+        <!-- page scanner -->
+        <div id="scanner" class="content parc">            
+            <h1>Scanner <span></span></h1>
+            <h2>
+                Enregistrement de la commande
+            </h2>
+            <form action="">
+                <div class="input__parc scanner">
+                    <label for="designation">Designation</label>
+                    <input type="text" id="designation" placeholder="hp..." required>
+                </div>
+                <div class="input__parc scanner">
+                    <label for="numeroSerie">Numéro de Série</label>
+                    <input type="text" id="numeroSerie" placeholder="CZ..." required>
+                </div>
+                <div class="input__parc scanner">
+                    <label for="numeroInventaire">N° Inventaire</label>
+                    <input type="text" id="numeroInventaire" placeholder="39..." required>
+                </div>
+                <div class="input__parc scanner">
+                    <label for="nomAgent">Nom de l'agent</label>
+                    <input type="text" id="nomAgent" placeholder="ABAKAR..." required>
+                </div>
+                <div class="input__parc scanner">
+                    <label for="direction">Direction</label>
+                    <input type="text" id="direction" placeholder="Nom de la Direction..." required>
+                </div>
+                <div class="input__parc scanner">
+                    <label for="service">Service</label>
+                    <input type="text" id="service" placeholder="Nom du Service..." required>
+                </div>
+                <div class="input__parc scanner">
+                    <label for="bureau">Bureau</label>
+                    <input type="text" id="bureau" placeholder="208" >
+                </div>
+                <div class="input__parc scanner">
+                    <label for="poste">Poste</label>
+                    <input type="text" id="poste" placeholder="Numéro du poste" >
+                </div>
+                <div class="input__parc  moniteur">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" placeholder="Nom du service" >
+                </div>
+                <div class="parc__btn">
+                    <button>Valider</button>
+                    <button>Imprimer</button>
+                    <button>Aperçu</button>
+                </div>
+            </form>    
+        </div>
+        <!-- fin scanner -->
+
+        <!-- page moniteur -->
+        <div id="moniteur" class="content parc">            
+            <h1>Moniteur <span></span></h1>
+            <h2>
+                Enregistrement de la commande
+            </h2>
+            <form action="">
+                <div class="input__parc moniteur">
+                    <label for="designation">Designation</label>
+                    <input type="text" id="designation" placeholder="hp..." required>
+                </div>
+                <div class="input__parc moniteur">
+                    <label for="numeroSerie">Numéro de Série</label>
+                    <input type="text" id="numeroSerie" placeholder="CZ..." required>
+                </div>
+                <div class="input__parc moniteur">
+                    <label for="numeroInventaire">N° Inventaire</label>
+                    <input type="text" id="numeroInventaire" placeholder="39..." required>
+                </div>
+                <div class="input__parc moniteur">
+                    <label for="nomAgent">Nom de l'agent</label>
+                    <input type="text" id="nomAgent" placeholder="ABAKAR..." required>
+                </div>
+                <div class="input__parc moniteur">
+                    <label for="direction">Direction</label>
+                    <input type="text" id="direction" placeholder="Nom de la Direction..." required>
+                </div>
+                <div class="input__parc moniteur">
+                    <label for="service">Service</label>
+                    <input type="text" id="service" placeholder="Nom du Service..." required>
+                </div>
+                <div class="input__parc moniteur">
+                    <label for="bureau">Bureau</label>
+                    <input type="text" id="bureau" placeholder="208" >
+                </div>
+                <div class="input__parc moniteur">
+                    <label for="poste">Poste</label>
+                    <input type="text" id="poste" placeholder="Numéro du poste" >
+                </div>
+                <div class="input__parc moniteur">
+                    <label for="date">Date</label>
+                    <input type="date" placeholder="Nom du service" >
+                </div>
+                <div class="parc__btn">
+                    <button>Valider</button>
+                    <button>Imprimer</button>
+                    <button>Aperçu</button>
+                </div>
+            </form>    
+        </div>
+        <!-- fin moniteur -->
+
+        <!-- page logiciel -->
+        <div id="logiciel" class="content parc">            
+            <h1>Logiciel <span></span></h1>
+            <h2>
+                Enregistrement de l'installation
+            </h2>
+            <form action="">
+                <div class="input__parc logiciel">
+                    <label for="designation">Designation</label>
+                    <input type="text" id="designation" placeholder="office..." required>
+                </div>
+                <div class="input__parc logiciel">
+                    <label for="nomAgent">Nom de l'agent</label>
+                    <input type="text" id="nomAgent" placeholder="ABAKAR..." required>
+                </div>
+                <div class="input__parc logiciel">
+                    <label for="direction">Direction</label>
+                    <input type="text" id="direction" placeholder="Nom de la Direction..." required>
+                </div>
+                <div class="input__parc logiciel">
+                    <label for="service">Service</label>
+                    <input type="text" id="service" placeholder="Nom du Service..." required>
+                </div>
+                <div class="input__parc logiciel">
+                    <label for="bureau">Bureau</label>
+                    <input type="text" id="bureau" placeholder="208" >
+                </div>
+                <div class="input__parc logiciel">
+                    <label for="poste">Poste</label>
+                    <input type="text" id="poste" placeholder="Numéro du poste" >
+                </div>
+                <div class="input__parc logiciel">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" placeholder="Nom du service" >
+                </div>
+                <div class="parc__btn">
+                    <button>Valider</button>
+                    <button>Imprimer</button>
+                    <button>Aperçu</button>
+                </div>
+            </form>    
+        </div>
+        <!-- fin logiciel -->
+        <!--fin parc  -->
+
+        <!--page etat  -->
+        <!-- page rapport -->
+        <div id="rapport" class="content rapport">
+            <h1>Rapport</h1>
+            <h2>Liste des rapports</h2>
+            <table>
+                <tr>
+                    <th>Nom</th>
+                    <th>Objet</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Rapport Imprimante</td>
+                    <td>Installation des imprimante</td>
+                    <td>27/09/2024</td>
+                </tr>
+                <tr>
+                    <td>Rapport OS</td>
+                    <td>Installation des OS sur les tablettes</td>
+                    <td>25/08/2024</td>
+                </tr>
+                <tr>
+                    <td>Rapport Encre</td>
+                    <td>Reception de la commande</td>
+                    <td>01/08/2024</td>
+                </tr>
+                <tr>
+                    <td>Rapport Java</td>
+                    <td>Installation du logiciel java</td>
+                    <td>17/07/2024</td>
+                </tr>
+            </table>
+        </div>
+        <!-- fin rapport -->
+
+        <!-- stock -->
+        <div id="stock" class="content stock">
+            <h1>Stock</h1>
+            <h2>Liste du matériels dans le parc</h2>
+            <table>
+                <tr>
+                    <th>Nom</th>
+                    <th>Modèle</th>
+                    <th>Quantité</th>
+                    <th>Date(mise à jour)</th>
+                </tr>
+                <tr>
+                    <td>Ordinateur</td>
+                    <td>Tablette hp</td>
+                    <td>27</td>
+                    <td>25/09/2024</td>
+                </tr>
+                <tr>
+                    <td>Ordinateur</td>
+                    <td>EliteBook hp</td>
+                    <td>78</td>
+                    <td>25/09/2024</td>
+                </tr>
+                <tr>
+                    <td>Ordinateur</td>
+                    <td>ProBook hp</td>
+                    <td>41</td>
+                    <td>25/09/2024</td>
+                </tr>
+                <tr>
+                    <td>Imprimante</td>
+                    <td>Lazer Jet hp</td>
+                    <td>14</td>
+                    <td>17/09/2024</td>
+                </tr>
+                <tr>
+                    <td>Swich</td>
+                    <td>Sisco</td>
+                    <td>12</td>
+                    <td>17/09/2024</td>
+                </tr>
+                <tr>
+                    <td>Swich</td>
+                    <td>IBM</td>
+                    <td>4</td>
+                    <td>10/09/2024</td>
+                </tr>
+                <tr>
+                    <td>clavier</td>
+                    <td>hp</td>
+                    <td>14</td>
+                    <td>10/09/2024</td>
+                </tr>
+                <tr>
+                    <td>Scanner</td>
+                    <td>hp</td>
+                    <td>24</td>
+                    <td>10/09/2024</td>
+                </tr>
+            </table>
+        </div>
+        <!-- fin stock -->
+        <!--fin etat  -->
+
+        <!--page  contact  -->
+        <div id="contact" class="content contact">
+            <h1>Contact</h1>           
+        </div>
+        <!--fin contacts  -->
+
+
+
+
+
+
+        <!--page Outils  -->
+        <div id="outils" class="content">
+            <h1>Outils</h1>
+            <p>liste des outils.</p>
+        </div>
+        <!--fin outils  -->
+
+        <!--page parametre  -->
+        <div id="parametre" class="content">
+            <h1>Paramètres</h1>
+            <p>liste des paramètres.</p>
+        </div>
+        <!--fin parametre  -->
+    </div>
+<!-- script pour la single page application -->
+    <script src="jS/Script.js"></script>
+<!-- script pour le défilement d'image -->
+
+</body>
+</html>

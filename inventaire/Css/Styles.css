@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+    margin: 0;
+    position: relative; /* Positionnement du parent */
+}
+
+
+.navbar {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center; 
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 5px 10px; /* Ajoute de l'espace autour du texte */
+    transition: background-color 0.3s; /* Transition douce */
+}
+
+.navbar li:hover {
+    background-color: #444; /* Couleur au survol */
+}
+
+
+.navbar li.active {
+    background-color: #555; /* Couleur de fond de l'élément actif */
+    color: white; /* Couleur du texte */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#content {
+    margin-top: 50px;
+    position: absolute;
+    top: 50%; /* Positionner à 50% du haut */
+    left: 50%; /* Positionner à 50% de la gauche */
+    transform: translate(-50%, -50%); /* Déplacer le conteneur vers le centre */
+    text-align: center; /* Centre le texte à l'intérieur du conteneur */
+}
+
+/* MIS EN COMMENTAIRE POUR TRAVAIL */
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+} */
+
+
+
+
+
+
+
